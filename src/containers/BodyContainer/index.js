@@ -6,26 +6,26 @@ import { loadWeatherDataAPI } from '../../reducers/weatherData';
 import { default as BodyComponent } from '../../components/BodyComponent';
 
 class BodyContainer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: []
-    };
-  }
-
   componentDidMount() {
     const { loadWeatherDataAPIProps } = this.props;
-
     loadWeatherDataAPIProps();
   }
 
   render() {
-    return <BodyComponent />;
+    const { data } = this.props;
+    return data.length === 0 ? (
+      <p>Loading....</p>
+    ) : (
+      <BodyComponent data={data} />
+    );
   }
 }
 
 const mapStateToProps = state => {
-  return {};
+  return {
+    data: state.weatherDataReducer.data,
+    loading: state.weatherDataReducer.loading
+  };
 };
 
 const mapDispatchToProps = dispatch => ({

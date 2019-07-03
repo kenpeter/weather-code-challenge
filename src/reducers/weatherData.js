@@ -77,9 +77,6 @@ export const loadWeatherDataAPI = () => {
 
     getWeatherData()
       .then(res => {
-        return res.json();
-      })
-      .then(res => {
         const data = res;
         dispatch(loadWeatherDataSuccess(data));
       })
