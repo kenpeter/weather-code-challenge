@@ -4,14 +4,6 @@ import React from 'react';
 import './index.scss';
 
 const BodyComponent = ({ data }) => {
-  /*
-  return (
-    <div className="bodyComponent">
-      <p>BodyComponent</p>
-    </div>
-  );
-  */
-
   return (
     <table>
       <caption>Current Weather</caption>
