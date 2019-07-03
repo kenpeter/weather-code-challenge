@@ -1,6 +1,6 @@
 # Coding Exercise
 
-Use **Create-React-App** to build a weather app, displaying the current weather conditions of Australia's major capital cities.
+Use ```Create-React-App``` to build a weather app, displaying the current weather conditions of Australia's major capital cities.
 
 ### Prerequisites
 
