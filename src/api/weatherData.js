@@ -4,10 +4,14 @@
 import { getWeatherDataUrlArr } from '../helper/helper';
 
 export const getWeatherData = () => {
+  // We can add more countries and citites in json file
   const data = require('../data/data.json');
-  const arr = getWeatherDataUrlArr(data.cities, data.country);
+  const arr = [];
+  let tmp = false;
 
-  console.log(arr);
-
+  for (let i = 0; i < data.length; i += 1) {
+    tmp = getWeatherDataUrlArr(data[i].cities, data[i].country);
+    arr.push([...tmp]);
+  }
   return arr;
 };

@@ -71,7 +71,7 @@ export const loadWeatherDataFail = errors => {
   };
 };
 
-export const loadLaunchesAPI = () => {
+export const loadWeatherDataAPI = () => {
   return dispatch => {
     dispatch(startLoadWeatherData());
 

@@ -3,12 +3,14 @@
 // eslint-disable-next-line global-require
 export const getWeatherDataUrl = (city, country) => {
   const config = require('../config.json');
-  return `${config.weatherDataUrl}/${config.version}/weather?q=${city},${country}&units=${config.units}&appid=${config.weatherDataApiKey}`;
+  const url = `${config.weatherDataUrl}/${config.version}/weather?q=${city},${country}&units=${config.units}&appid=${config.weatherDataApiKey}`;
+  return url;
 };
 
 export const getWeatherDataUrlArr = (cities, country) => {
-  const arr = cities.forEach(city => {
-    return getWeatherDataUrl(city, country);
-  });
+  const arr = [];
+  for (let i = 0; i < cities.length; i += 1) {
+    arr.push(getWeatherDataUrl(cities[i], country));
+  }
   return arr;
 };
