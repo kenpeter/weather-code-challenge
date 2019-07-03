@@ -23,6 +23,7 @@ Install node and npm together
 ```
 brew install node
 ```
+
 See deployment for notes on how to deploy the project on a live system.
 
 ## Getting Started
@@ -33,18 +34,21 @@ git clone this project to your machine
 git clone https://github.com/kenpeter/weather-code-challenge
 ```
 
-
-
-
 ### Installing
 
-Inside the root of project, run 
+Inside the root of project, install all dependencies. 
 
 ```
 $ npm install
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+To launch this app, do following
+
+```
+$ npm start
+```
+
+App should automatically running in a new tab of your browser. If it is not starting, makre sure port ```3000``` is not used by other apps.
 
 ## Running the tests
 
