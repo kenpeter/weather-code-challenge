@@ -5,7 +5,7 @@ import './index.scss';
 
 const BodyComponent = ({ data }) => {
   return (
-    <table>
+    <table className="bodyComponent">
       <caption>Current Weather</caption>
       <thead>
         <tr>
