@@ -1,0 +1,6 @@
+{
+  "weatherDataUrl": "https://api.openweathermap.org/data",
+  "version": "2.5",
+  "weatherDataApiKey": "8a7df8d3c38a9dabd895acf9eeaefded",
+  "units": "metric"
+}
