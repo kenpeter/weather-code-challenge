@@ -4,6 +4,10 @@ import React from 'react';
 import './index.scss';
 
 const BodyComponent = ({ data }) => {
+  if (data === undefined) {
+    return <div>No data</div>;
+  }
+
   return (
     <table className="bodyComponent">
       <caption>Current Weather</caption>
