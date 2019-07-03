@@ -1,33 +1,47 @@
-# Project Title
+# Coding Exercise
 
-One Paragraph of project description goes here
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Use **Create-React-App** to build a weather app, displaying the current weather conditions of Australia's major capital cities.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Assume you are running Mac. Make sure the following are installed.
+
+Install brew
 
 ```
-Give examples
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+
+Install git
+
+```
+brew install git
+```
+
+Install node and npm together
+
+```
+brew install node
+```
+See deployment for notes on how to deploy the project on a live system.
+
+## Getting Started
+
+git clone this project to your machine
+
+```
+git clone https://github.com/kenpeter/weather-code-challenge
+```
+
+
+
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Inside the root of project, run 
 
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+$ npm install
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
