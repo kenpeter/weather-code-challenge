@@ -14,7 +14,7 @@ export async function getWeatherData() {
     arr = arr.concat([...tmp]);
   }
 
-  let res = false;
+  let res = [];
   try {
     res = await Promise.all(
       arr.map(url => fetch(url).then(resp => resp.text()))
