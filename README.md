@@ -145,12 +145,30 @@ To run tests
 $ npm test
 ```
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+### Break down tests
+Test api call to https://api.openweathermap.org
 ```
-Give an example
+api/weatherData.test.js
+```
+
+Test BodyComponent to render data in a table layout
+```
+BodyComponent/index.test.js
+```
+
+Test MainComponent, which contains the bodyContainer
+```
+MainComponent/index.test.js
+```
+
+Test helper to construct an api url
+```
+helper/helper.test.js
+```
+
+Test App to render itself
+```
+src/App.test.js
 ```
 
 ## Deployment
