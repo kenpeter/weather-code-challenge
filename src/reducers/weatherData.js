@@ -74,10 +74,8 @@ export const loadWeatherDataFail = errors => {
 export const loadWeatherDataAPI = () => {
   return dispatch => {
     dispatch(startLoadWeatherData());
-
     getWeatherData()
-      .then(res => {
-        const data = res;
+      .then(data => {
         dispatch(loadWeatherDataSuccess(data));
       })
       .catch(err => {

@@ -23,9 +23,7 @@ const BodyComponent = ({ data }) => {
         </tr>
       </thead>
       <tbody>
-        {data.map((item, index) => {
-          const d = JSON.parse(item);
-
+        {data.map((d, index) => {
           return (
             <tr key={index}>
               <td data-label="City">{d.name}</td>
