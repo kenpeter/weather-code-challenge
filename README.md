@@ -135,6 +135,8 @@ export async function getWeatherData() {
 }
 ```
 
+For further thinking, the API has option to `Call for several city IDs (limit of locations is 20)`. One thing we can do is that in a loop, one pagination (which contains 20 cities) to call the api. The next iternation, we do the same thing. This will speed things up.
+
 ## Running the tests
 
 Explain how to run the automated tests for this system
@@ -157,7 +159,24 @@ Give an example
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Compile javascript and make it ready to be served
+
+```
+npm run build
+```
+
+Now serve it and view it browser
+
+```
+npm install -g serve
+serve -s build
+```
+
+It is served at port 5000. Can be viewed via http://localhost:5000
+
+## About this readme
+
+This readme is based on this good [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
 
 ## Authors
 
