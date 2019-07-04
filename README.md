@@ -15,13 +15,13 @@ Install brew
 Install git
 
 ```
-brew install git
+$ brew install git
 ```
 
 Install node and npm together
 
 ```
-brew install node
+$ brew install node
 ```
 
 See deployment for notes on how to deploy the project on a live system.
@@ -31,7 +31,7 @@ See deployment for notes on how to deploy the project on a live system.
 git clone this project to your machine
 
 ```
-git clone https://github.com/kenpeter/weather-code-challenge
+$ git clone https://github.com/kenpeter/weather-code-challenge
 ```
 
 ### Installing
@@ -139,17 +139,13 @@ For further thinking, the API has option to `Call for several city IDs (limit of
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+To run tests
+
+```
+$ npm test
+```
 
 ### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
 
 Explain what these tests test and why
 
@@ -162,14 +158,14 @@ Give an example
 Compile javascript and make it ready to be served
 
 ```
-npm run build
+$ npm run build
 ```
 
 Now serve it and view it browser
 
 ```
-npm install -g serve
-serve -s build
+$ npm install -g serve
+$ serve -s build
 ```
 
 It is served at port 5000. Can be viewed via http://localhost:5000

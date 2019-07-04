@@ -4,7 +4,7 @@
 /* eslint-disable import/prefer-default-export */
 import { getWeatherDataUrl } from '../helper/helper';
 
-export async function getWeatherData() {
+export const getWeatherData = async () => {
   const data = require('../data/data.json');
   const res = [];
 
@@ -18,4 +18,4 @@ export async function getWeatherData() {
     }
   }
   return res;
-}
+};
