@@ -11,10 +11,10 @@ export async function getWeatherData() {
   for (let i = 0; i < data.length; i += 1) {
     for (let j = 0; j < data[i].cities.length; j += 1) {
       const url = getWeatherDataUrl(data[i].cities[j], data[i].country);
-      const p1 = await fetch(url);
-      const p2 = await p1.json();
-      p2.country = data[i].country;
-      res.push(p2);
+      const fetchRes = await fetch(url);
+      const jsonData = await fetchRes.json();
+      jsonData.country = data[i].country;
+      res.push(jsonData);
     }
   }
   return res;

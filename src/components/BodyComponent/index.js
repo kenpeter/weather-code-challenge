@@ -26,7 +26,9 @@ const BodyComponent = ({ data }) => {
         {data.map((d, index) => {
           return (
             <tr key={index}>
-              <td data-label="City">{d.name}</td>
+              <td data-label="City">
+                {d.name} ({d.country})
+              </td>
               <td data-label="Desc">{d.weather[0].main}</td>
               <td data-label="Temp">{d.main.temp}&#8451;</td>
               <td data-label="Min">{d.main.temp_min}</td>
