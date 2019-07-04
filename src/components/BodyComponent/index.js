@@ -5,7 +5,7 @@ import './index.scss';
 
 const BodyComponent = ({ data }) => {
   if (data === undefined) {
-    return <div>No data</div>;
+    return <div className="bodyComponent noData">No data</div>;
   }
 
   return (

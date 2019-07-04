@@ -2,12 +2,12 @@
 import React from 'react';
 import BodyContainer from '../../containers/BodyContainer';
 
-const MainContainer = () => {
+const MainComponent = () => {
   return (
-    <div className="mainContainer">
+    <div className="mainComponent">
       <BodyContainer />
     </div>
   );
 };
 
-export default MainContainer;
+export default MainComponent;

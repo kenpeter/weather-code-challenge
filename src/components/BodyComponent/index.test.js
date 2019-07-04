@@ -8,15 +8,14 @@ import BodyComponent from './index';
 configure({ adapter: new Adapter() });
 
 describe('Test BodyComponent', () => {
-  it('BodyComponent renders without crashing', () => {
+  it('<BodyComponent/> renders without crashing', () => {
     const div = document.createElement('div');
     ReactDOM.render(<BodyComponent />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('renders three <Foo /> components', () => {
+  it('<BodyComponent /> has noData class', () => {
     const wrapper = shallow(<BodyComponent />);
-
-    console.log(wrapper);
+    expect(wrapper.find('.noData').exists()).toEqual(true);
   });
 });
