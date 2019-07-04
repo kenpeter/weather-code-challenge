@@ -195,7 +195,3 @@ This readme is based on this good [template](https://gist.github.com/PurpleBooth
 ## Authors
 
 - [Kenpeter](https://github.com/kenpeter)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
