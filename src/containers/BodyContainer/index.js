@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { loadWeatherDataAPI } from '../../reducers/weatherData';
 import { default as BodyComponent } from '../../components/BodyComponent';
 
-export class BodyContainer extends Component {
+class BodyContainer extends Component {
   componentDidMount() {
     const { loadWeatherDataAPIProps } = this.props;
     loadWeatherDataAPIProps();
