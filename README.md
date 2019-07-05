@@ -76,10 +76,11 @@ App should automatically running in a new tab of your browser. If it is not star
 
 ### Scalability
 
-- data.json is allowed to hold mutiple countries and cities. It is easy to add
+- ```data.json``` is allowed to hold ```mutiple countries and cities```. It is easy to add
   more countries and cities by modifying data.json
-- config.json has API key and URL. It is easy to change end point.
-- The front end is able to display city along with country it belongs.
+- ```config.json``` has API key and URL. It is easy to ```substitue``` end point.
+- Mutiple countries with mutiple cities in front end
+- ```react-router-dom``` is used, allow mutiple access points in front end.
 
 ### Reliability
 
