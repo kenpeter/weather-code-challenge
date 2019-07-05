@@ -73,6 +73,7 @@ App should automatically running in a new tab of your browser. If it is not star
 - Having component and container in separate folders.
 - Data (data.json) and config (config.json) are sitting in its own folders.
 - Each UI component has front end code + style + test cases.
+- The UI has 3 parts: header, main body and footer. This allows header and footer intact, but substitute with different body. 
 
 ### Scalability
 
