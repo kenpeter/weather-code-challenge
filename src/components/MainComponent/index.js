@@ -1,15 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import BodyContainer from '../../containers/BodyContainer';
-import HeaderComponent from '../HeaderComponent';
-import FooterComponent from '../FooterComponent';
+import HeaderContainer from '../../containers/HeaderContainer';
+import FooterContainer from '../../containers/FooterContainer';
 
 const MainComponent = () => {
   return (
     <div className="mainComponent">
-      <HeaderComponent />
+      <HeaderContainer />
       <BodyContainer />
-      <FooterComponent />
+      <FooterContainer />
     </div>
   );
 };
