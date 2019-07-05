@@ -10,7 +10,6 @@ const BodyComponent = ({ data }) => {
 
   return (
     <table className="bodyComponent">
-      <caption>Current Weather</caption>
       <thead>
         <tr>
           <th scope="col">City</th>

@@ -24,8 +24,6 @@ describe('Test BodyComponent', () => {
   it('<BodyComponent /> has bodyComponent class', async () => {
     const data = await getWeatherData();
     const wrapper = shallow(<BodyComponent data={data} />);
-    expect(wrapper.hasClass('bodyComponent')).toEqual(true);
-
     expect(
       wrapper.containsMatchingElement(<td data-label="City">Canberra (AU)</td>)
     ).toBeTruthy();
